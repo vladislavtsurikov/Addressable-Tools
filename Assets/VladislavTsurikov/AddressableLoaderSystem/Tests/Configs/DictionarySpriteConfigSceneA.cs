@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using AYellowpaper.SerializedCollections;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace VladislavTsurikov.AddressableLoaderSystem.Tests
