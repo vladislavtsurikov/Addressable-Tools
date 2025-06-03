@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="float"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Single}" />
+    /// <seealso cref="float" />
     public sealed class SingleSerializer : Serializer<float>
     {
         /// <summary>

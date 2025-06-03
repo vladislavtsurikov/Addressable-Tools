@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="double"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Double}" />
+    /// <seealso cref="double" />
     public sealed class DoubleSerializer : Serializer<double>
     {
         /// <summary>

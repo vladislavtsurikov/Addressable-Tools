@@ -29,7 +29,7 @@ namespace OdinSerializer
     /// Custom generic formatter for the <see cref="UnityEvent{T0}"/>, <see cref="UnityEvent{T0, T1}"/>, <see cref="UnityEvent{T0, T1, T2}"/> and <see cref="UnityEvent{T0, T1, T2, T3}"/> types.
     /// </summary>
     /// <typeparam name="T">The type of UnityEvent that this formatter can serialize and deserialize.</typeparam>
-    /// <seealso cref="ReflectionFormatter{UnityEngine.Events.UnityEvent}" />
+    /// <seealso cref="UnityEvent" />
     public class UnityEventFormatter<T> : ReflectionFormatter<T> where T : UnityEventBase, new()
     {
         /// <summary>

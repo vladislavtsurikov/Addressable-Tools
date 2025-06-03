@@ -1,4 +1,8 @@
 ﻿#if UNITY_EDITOR
+using System;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.AddressableAssets;
 using UnityEngine;
 using VladislavTsurikov.AddressableLoaderSystem.Runtime.Core.AddressableLabelMap;
 

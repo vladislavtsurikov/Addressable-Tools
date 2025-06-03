@@ -74,7 +74,7 @@ namespace VladislavTsurikov.Undo.Editor.GameObject
                 go.transform.localScale = _instance.Scale;
                 go.transform.rotation = _instance.Rotation;
 
-                UnityEditor.GameObjectUtility.ParentGameObject(go, _parent);
+                GameObjectUtility.ParentGameObject(go, _parent);
 
                 return go;
             }

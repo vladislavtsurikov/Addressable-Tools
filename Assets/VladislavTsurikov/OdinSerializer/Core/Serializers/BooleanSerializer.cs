@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="bool"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Boolean}" />
+    /// <seealso cref="bool" />
     public sealed class BooleanSerializer : Serializer<bool>
     {
         /// <summary>

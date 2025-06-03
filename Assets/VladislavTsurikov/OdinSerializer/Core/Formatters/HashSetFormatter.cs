@@ -32,7 +32,7 @@ namespace OdinSerializer
     /// Custom generic formatter for the generic type definition <see cref="HashSet{T}"/>.
     /// </summary>
     /// <typeparam name="T">The element type of the formatted list.</typeparam>
-    /// <seealso cref="BaseFormatter{System.Collections.Generic.HashSet{T}}" />
+    /// <seealso cref="HashSet{T}" />
     public class HashSetFormatter<T> : BaseFormatter<HashSet<T>>
     {
         private static readonly Serializer<T> TSerializer = Serializer.Get<T>();

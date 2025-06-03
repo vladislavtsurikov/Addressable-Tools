@@ -1,4 +1,6 @@
-﻿using VladislavTsurikov.AddressableLoaderSystem.Runtime.Core;
+﻿using System.ComponentModel;
+using VladislavTsurikov.AddressableLoaderSystem.Runtime.Core;
+using Zenject;
 
 namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.ZenjectIntegration
 {

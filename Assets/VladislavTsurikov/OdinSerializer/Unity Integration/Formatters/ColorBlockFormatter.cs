@@ -17,6 +17,7 @@
 //-----------------------------------------------------------------------
 
 using OdinSerializer;
+using UnityEngine.UI;
 
 [assembly: RegisterFormatterLocator(typeof(ColorBlockFormatterLocator))]
 
@@ -58,7 +59,7 @@ namespace OdinSerializer
     /// <summary>
     /// Custom formatter for the <see cref="ColorBlock"/> type.
     /// </summary>
-    /// <seealso cref="MinimalBaseFormatter{UnityEngine.UI.ColorBlock}" />
+    /// <seealso cref="ColorBlock" />
     public class ColorBlockFormatter<T> : MinimalBaseFormatter<T>
     {
         private static readonly Serializer<float> FloatSerializer = Serializer.Get<float>();

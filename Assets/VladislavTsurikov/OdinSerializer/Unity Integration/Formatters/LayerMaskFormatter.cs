@@ -27,7 +27,7 @@ namespace OdinSerializer
     /// <summary>
     /// Custom formatter for the <see cref="LayerMask"/> type.
     /// </summary>
-    /// <seealso cref="MinimalBaseFormatter{UnityEngine.LayerMask}" />
+    /// <seealso cref="LayerMask" />
     public class LayerMaskFormatter : MinimalBaseFormatter<LayerMask>
     {
         private static readonly Serializer<int> IntSerializer = Serializer.Get<int>();

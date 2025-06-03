@@ -16,6 +16,8 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using UnityEngine;
+
 #if (UNITY_EDITOR || UNITY_STANDALONE) && !ENABLE_IL2CPP
 #define CAN_EMIT
 #endif

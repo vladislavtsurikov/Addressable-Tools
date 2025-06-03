@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core
 {
     public abstract class ResourceLoaderRegistrar

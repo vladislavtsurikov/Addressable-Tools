@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="ushort"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.UInt16}" />
+    /// <seealso cref="ushort" />
     public sealed class UInt16Serializer : Serializer<ushort>
     {
         /// <summary>

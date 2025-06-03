@@ -27,7 +27,7 @@ namespace OdinSerializer
     /// <summary>
     /// Custom formatter for the <see cref="TimeSpan"/> type.
     /// </summary>
-    /// <seealso cref="MinimalBaseFormatter{System.TimeSpan}" />
+    /// <seealso cref="TimeSpan" />
     public sealed class TimeSpanFormatter : MinimalBaseFormatter<TimeSpan>
     {
         /// <summary>

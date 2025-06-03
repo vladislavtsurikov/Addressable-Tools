@@ -1,4 +1,7 @@
-﻿namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core.AddressableLabelMap
+﻿using System;
+using System.Collections.Generic;
+
+namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core.AddressableLabelMap
 {
     public static class AddressableLabelResolver
     {

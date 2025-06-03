@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="decimal"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Decimal}" />
+    /// <seealso cref="decimal" />
     public sealed class DecimalSerializer : Serializer<decimal>
     {
         /// <summary>

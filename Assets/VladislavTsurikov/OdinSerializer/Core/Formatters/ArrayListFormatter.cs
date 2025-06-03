@@ -16,6 +16,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using System.Collections.Generic;
 using OdinSerializer;
 
 [assembly: RegisterFormatter(typeof(ArrayListFormatter))]
@@ -28,7 +29,7 @@ namespace OdinSerializer
     /// <summary>
     /// Custom formatter for the type <see cref="ArrayList"/>.
     /// </summary>
-    /// <seealso cref="BaseFormatter{System.Collections.Generic.List{T}}" />
+    /// <seealso cref="List{T}" />
     public class ArrayListFormatter : BaseFormatter<ArrayList>
     {
         private static readonly Serializer<object> ObjectSerializer = Serializer.Get<object>();

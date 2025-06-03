@@ -25,7 +25,7 @@ namespace OdinSerializer
     /// <summary>
     /// Formatter for the <see cref="Type"/> type which uses the reader/writer's <see cref="TwoWaySerializationBinder"/> to bind types.
     /// </summary>
-    /// <seealso cref="Serialization.MinimalBaseFormatter{T}" />
+    /// <seealso cref="MinimalBaseFormatter{T}" />
     public sealed class TypeFormatter : MinimalBaseFormatter<Type>
     {
         /// <summary>

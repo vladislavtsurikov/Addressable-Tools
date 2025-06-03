@@ -27,7 +27,7 @@ namespace OdinSerializer
     /// <summary>
     /// Custom formatter for the <see cref="Rect"/> type.
     /// </summary>
-    /// <seealso cref="MinimalBaseFormatter{UnityEngine.Rect}" />
+    /// <seealso cref="Rect" />
     public class RectFormatter : MinimalBaseFormatter<Rect>
     {
         private static readonly Serializer<float> FloatSerializer = Serializer.Get<float>();

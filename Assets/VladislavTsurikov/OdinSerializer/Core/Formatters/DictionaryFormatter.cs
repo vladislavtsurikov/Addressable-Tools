@@ -33,7 +33,7 @@ namespace OdinSerializer
     /// </summary>
     /// <typeparam name="TKey">The type of the dictionary key.</typeparam>
     /// <typeparam name="TValue">The type of the dictionary value.</typeparam>
-    /// <seealso cref="BaseFormatter{System.Collections.Generic.Dictionary{TKey, TValue}}" />
+    /// <seealso cref="Dictionary{TKey,TValue}" />
     public sealed class DictionaryFormatter<TKey, TValue> : BaseFormatter<Dictionary<TKey, TValue>>
     {
         private static readonly bool KeyIsValueType = typeof(TKey).IsValueType;

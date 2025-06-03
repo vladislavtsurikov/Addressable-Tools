@@ -64,7 +64,7 @@ namespace VladislavTsurikov.SceneDataSystem.Editor
 		    _loadFilesFromFolderButton = new Button()
 			    .SetLabelText("Find Scene Data Managers")
 			    .SetAccentColor(GetSelectableColor.Default.Amber)
-			    .SetButtonStyle(IMGUIUtility.Editor.ButtonStyle.Contained)
+			    .SetButtonStyle(ButtonStyle.Contained)
 			    .SetElementSize(ElementSize.Normal)
 			    .SetOnClick(Instance.FindAllSceneDataManager);
 		    
@@ -90,12 +90,12 @@ namespace VladislavTsurikov.SceneDataSystem.Editor
 				    sceneDataManager.SceneType = (SceneType)evt.newValue;
 			    });
 
-			    Label label = UnityEngine.UIElements.VisualElementExtensions.SetStyleUnityFontStyle(new Label(sceneDataManager.Scene.name)
-					    .SetStyleUnityFont(GetFont.Ubuntu.Light)
-					    .SetStyleFontSize(12), FontStyle.Bold);
+			    Label label = new Label(sceneDataManager.Scene.name)
+				    .SetStyleUnityFont(GetFont.Ubuntu.Light)
+				    .SetStyleFontSize(12).SetStyleUnityFontStyle(FontStyle.Bold);
 
 			    raw.Add(label);
-			    UnityEngine.UIElements.VisualElementExtensions.AddSpace(raw, 0, ConstantVisualElements.Spacing * 2);
+			    raw.AddSpace(0, ConstantVisualElements.Spacing * 2);
 			    raw.Add(enumField);
 
 			    VisualElementListViewItem sceneManagerItem = new VisualElementListViewItem(raw, i, _listView)
@@ -117,9 +117,9 @@ namespace VladislavTsurikov.SceneDataSystem.Editor
 			    {
 				    SceneData sceneData = sceneDataManager.SceneDataStack.ElementList[j];
 					    
-				    Label sceneDataLabel = UnityEngine.UIElements.VisualElementExtensions.SetStyleUnityFontStyle(new Label(sceneData.Name)
-						    .SetStyleUnityFont(GetFont.Ubuntu.Light)
-						    .SetStyleFontSize(12), FontStyle.Bold);
+				    Label sceneDataLabel = new Label(sceneData.Name)
+					    .SetStyleUnityFont(GetFont.Ubuntu.Light)
+					    .SetStyleFontSize(12).SetStyleUnityFontStyle(FontStyle.Bold);
 
 				    var index = j;
 				    VisualElementListViewItem sceneDataItem = new VisualElementListViewItem(sceneDataLabel, index, _listView)
@@ -138,7 +138,7 @@ namespace VladislavTsurikov.SceneDataSystem.Editor
 			    raw.Add(sceneDatasListView);
 			    
 			    listViewItems.Add(sceneManagerItem);
-			    listViewItems.Add(UnityEngine.UIElements.VisualElementExtensions.SetStyleSize(new VisualElement().SetName("Space"), 0, ConstantVisualElements.Spacing * 2));
+			    listViewItems.Add(new VisualElement().SetName("Space").SetStyleSize(0, ConstantVisualElements.Spacing * 2));
 		    }
 
 		    _listView.AddListViewItems(listViewItems);

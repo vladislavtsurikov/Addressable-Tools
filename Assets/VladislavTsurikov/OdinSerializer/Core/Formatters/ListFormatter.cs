@@ -31,7 +31,7 @@ namespace OdinSerializer
     /// Custom generic formatter for the generic type definition <see cref="List{T}"/>.
     /// </summary>
     /// <typeparam name="T">The element type of the formatted list.</typeparam>
-    /// <seealso cref="BaseFormatter{System.Collections.Generic.List{T}}" />
+    /// <seealso cref="List{T}" />
     public class ListFormatter<T> : BaseFormatter<List<T>>
     {
         private static readonly Serializer<T> TSerializer = Serializer.Get<T>();

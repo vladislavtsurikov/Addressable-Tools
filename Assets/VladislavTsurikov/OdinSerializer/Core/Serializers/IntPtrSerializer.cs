@@ -23,7 +23,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="IntPtr"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.IntPtr}" />
+    /// <seealso cref="IntPtr" />
     public sealed class IntPtrSerializer : Serializer<IntPtr>
     {
         /// <summary>

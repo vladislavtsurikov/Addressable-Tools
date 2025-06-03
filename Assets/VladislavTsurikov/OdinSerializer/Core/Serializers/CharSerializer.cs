@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="char"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Char}" />
+    /// <seealso cref="char" />
     public sealed class CharSerializer : Serializer<char>
     {
         /// <summary>

@@ -1,4 +1,9 @@
-﻿namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core.AddressableLabelMap
+﻿using System;
+using System.Collections.Generic;
+using OdinSerializer;
+using VladislavTsurikov.ScriptableObjectUtility.Runtime;
+
+namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core.AddressableLabelMap
 {
     [LocationAsset("AddressableLoaderSystem/AddressableLabelMap")]
     public class AddressableLabelMapAsset : SerializedScriptableObjectSingleton<AddressableLabelMapAsset>

@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="sbyte"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.SByte}" />
+    /// <seealso cref="sbyte" />
     public sealed class SByteSerializer : Serializer<sbyte>
     {
         /// <summary>

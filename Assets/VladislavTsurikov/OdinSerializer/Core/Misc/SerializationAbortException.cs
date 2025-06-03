@@ -16,6 +16,8 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
+using System.Runtime.Serialization;
+
 namespace OdinSerializer
 {
     using System;

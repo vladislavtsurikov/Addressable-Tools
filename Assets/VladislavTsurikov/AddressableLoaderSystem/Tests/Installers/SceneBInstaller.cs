@@ -1,4 +1,7 @@
-﻿namespace VladislavTsurikov.AddressableLoaderSystem.Tests
+﻿using System.ComponentModel;
+using Zenject;
+
+namespace VladislavTsurikov.AddressableLoaderSystem.Tests
 {
     public class SceneBInstaller : MonoInstaller
     {

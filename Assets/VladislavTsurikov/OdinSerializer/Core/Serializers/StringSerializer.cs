@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="string"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.String}" />
+    /// <seealso cref="string" />
     public sealed class StringSerializer : Serializer<string>
     {
         /// <summary>

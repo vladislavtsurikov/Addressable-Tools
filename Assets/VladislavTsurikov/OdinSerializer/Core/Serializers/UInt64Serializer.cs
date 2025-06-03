@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="ulong"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.UInt64}" />
+    /// <seealso cref="ulong" />
     public sealed class UInt64Serializer : Serializer<ulong>
     {
         /// <summary>

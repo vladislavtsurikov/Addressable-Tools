@@ -25,7 +25,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="Guid"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Guid}" />
+    /// <seealso cref="Guid" />
     public sealed class GuidSerializer : Serializer<Guid>
     {
         /// <summary>

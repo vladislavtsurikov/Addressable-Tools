@@ -5,6 +5,6 @@ namespace VladislavTsurikov.MegaWorld.Runtime.Common.Settings
 {
     public class TransformSpaceSettings : Component
     {
-        public TransformSpace TransformSpace = this.TransformSpace.Global;
+        public TransformSpace TransformSpace = TransformSpace.Global;
     }
 }

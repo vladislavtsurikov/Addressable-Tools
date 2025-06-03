@@ -1,6 +1,8 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using VladislavTsurikov.AddressableLoaderSystem.Runtime.Core;
+using Zenject;
 
 namespace VladislavTsurikov.AddressableLoaderSystem.Tests
 {

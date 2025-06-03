@@ -1,4 +1,7 @@
-﻿namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core
+﻿using System;
+using System.Linq;
+
+namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.Core
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class SceneFilterAttribute : FilterAttribute

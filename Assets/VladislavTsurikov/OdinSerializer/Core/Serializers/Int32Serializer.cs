@@ -21,7 +21,7 @@ namespace OdinSerializer
     /// <summary>
     /// Serializer for the <see cref="int"/> type.
     /// </summary>
-    /// <seealso cref="Serializer{System.Int32}" />
+    /// <seealso cref="int" />
     public sealed class Int32Serializer : Serializer<int>
     {
         /// <summary>

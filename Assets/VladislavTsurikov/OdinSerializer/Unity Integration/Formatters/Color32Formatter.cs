@@ -27,7 +27,7 @@ namespace OdinSerializer
     /// <summary>
     /// Custom formatter for the <see cref="Color32"/> type.
     /// </summary>
-    /// <seealso cref="MinimalBaseFormatter{UnityEngine.Color32}" />
+    /// <seealso cref="Color32" />
     public class Color32Formatter : MinimalBaseFormatter<Color32>
     {
         private static readonly Serializer<byte> ByteSerializer = Serializer.Get<byte>();
