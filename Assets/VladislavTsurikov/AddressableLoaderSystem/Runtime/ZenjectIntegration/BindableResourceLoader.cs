@@ -4,24 +4,22 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using VladislavTsurikov.AddressableLoaderSystem.Runtime.Core;
 using Zenject;
+using Object = UnityEngine.Object;
 
 namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.ZenjectIntegration
 {
     public abstract class BindableResourceLoader : ResourceLoader
     {
-        private DiContainer _container;
         private readonly List<(Type type, object identifier)> _boundTypes = new();
+        private readonly DiContainer _container;
 
-        public BindableResourceLoader(DiContainer container)
-        {
-            _container = container;
-        }
+        public BindableResourceLoader(DiContainer container) => _container = container;
 
-        protected override async UniTask UnloadResourceLoader(CancellationToken token)
+        protected sealed override async UniTask UnloadResourceLoader(CancellationToken token)
         {
             await OnResourceUnload();
-            
-            foreach (var (type, id) in _boundTypes)
+
+            foreach ((Type type, var id) in _boundTypes)
             {
                 if (id != null)
                 {
@@ -36,10 +34,7 @@ namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.ZenjectIntegration
             _boundTypes.Clear();
         }
 
-        public virtual async UniTask OnResourceUnload()
-        {
-            await UniTask.CompletedTask;
-        }
+        protected virtual async UniTask OnResourceUnload() => await UniTask.CompletedTask;
 
         protected void BindToContainer<T>(T instance, object id = null)
         {
@@ -60,22 +55,22 @@ namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.ZenjectIntegration
             }
         }
 
-        protected async UniTask<T> LoadAndBind<T>(CancellationToken token, string key, object id = null) where T : UnityEngine.Object
-        {
-            var obj = await LoadAndTrack<T>(key, token);
+        protected UniTask<T> LoadAndBind<T>(CancellationToken token, string key, object id = null) where T : Object =>
+            LoadAndTrack<T>(key, token)
+                .ContinueWith(obj =>
+                {
+                    if (obj == null)
+                    {
+                        return null;
+                    }
 
-            if (obj == null)
-            {
-                return null;
-            }
+                    if (obj is Object uObj && uObj == null)
+                    {
+                        return null;
+                    }
 
-            if (obj is UnityEngine.Object uObj && uObj == null)
-            {
-                return null;
-            }
-
-            BindToContainer(obj, id);
-            return obj;
-        }
+                    BindToContainer(obj, id);
+                    return obj;
+                });
     }
 }

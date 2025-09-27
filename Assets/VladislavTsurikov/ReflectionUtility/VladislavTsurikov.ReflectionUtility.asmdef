@@ -1,9 +1,8 @@
 {
-    "name": "Neutral.ScriptableObjectUtility",
+    "name": "VladislavTsurikov.ReflectionUtility",
     "rootNamespace": "",
     "references": [
-        "GUID:c58cb679f31162c47bc160d1f716ecea",
-        "GUID:4f3f15d33f84e044490b60cf8fdc046e"
+        "GUID:c58cb679f31162c47bc160d1f716ecea"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -9,7 +9,7 @@ namespace VladislavTsurikov.AddressableLoaderSystem.Runtime.ZenjectIntegration
     {
         public override IEnumerable<ResourceLoader> GetLoaders()
         {
-            var container = ProjectContext.Instance.Container;
+            DiContainer container = ProjectContext.Instance.Container;
             return ReflectionFactory.CreateAllInstances<BindableResourceLoader>(container);
         }
     }
