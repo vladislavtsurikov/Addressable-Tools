@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TestContent4
+  m_EditorClassIdentifier: 
+  m_GroupName: TestContent4
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ca976623f6ba7e744b081c8f85339a1c
+  m_SerializeEntries:
+  - m_GUID: 2d68abec1e36be34dac95c937b3b7458
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/TestMaterial.mat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent4
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 816e70aa1f664ea4e8fce243297d9595
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/GeneralConfig.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent4
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b02bd3b6843e3cf41b99e1bdc01e87f0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 25f3c5810f0cfca4782815b52bf988e1, type: 2}

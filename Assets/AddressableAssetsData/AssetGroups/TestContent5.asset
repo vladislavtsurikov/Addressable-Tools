@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TestContent5
+  m_EditorClassIdentifier: 
+  m_GroupName: TestContent5
+  m_Data:
+    m_SerializedData: []
+  m_GUID: ed8a43f386cca3942baaa08ce6cb4f55
+  m_SerializeEntries:
+  - m_GUID: 165d85a61a3aff242aa3d9ad62856863
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/Sprite1.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent5
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cabc4f9f216f0344dbfcdd0a5467d277
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/Sprite2.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent5
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b02bd3b6843e3cf41b99e1bdc01e87f0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 891adadaff0829b4a989f8a2b3d2649f, type: 2}
+    - {fileID: 11400000, guid: 8161dd965dc470d48926bb7ee7fa8d66, type: 2}

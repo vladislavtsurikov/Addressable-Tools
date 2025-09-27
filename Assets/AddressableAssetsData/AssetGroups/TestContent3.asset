@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TestContent3
+  m_EditorClassIdentifier: 
+  m_GroupName: TestContent3
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 914a0cb3fb9cefb438a13d7258a0bbdc
+  m_SerializeEntries:
+  - m_GUID: 364ba6113f89a2141a3c847072b0cee1
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/MonoBehaviourConfigB.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent3
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e14a49e1f51e7e4eb1c776c0ac4f2bd
+    m_Address: TestLoopConfig
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent3
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5bbdb4f46ded5604fa0da16dc2255513
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/MonoBehaviourLoaderTest.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent3
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7343b6f16e65b074b9b54e49e9ec36ba
+    m_Address: Assets/Scripts/AddressableLoaderSystem/Tests/Content/MonoBehaviourConfigA.asset
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent3
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b02bd3b6843e3cf41b99e1bdc01e87f0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 3957368a9771f884a85388edac0ba48f, type: 2}

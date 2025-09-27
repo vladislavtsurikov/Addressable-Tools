@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TestContent
+  m_EditorClassIdentifier: 
+  m_GroupName: TestContent
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bf78179ea9ee3d447ade3f96e5ee5de5
+  m_SerializeEntries:
+  - m_GUID: 052ad659a6bd8fe449ff5286f8642403
+    m_Address: ConfigSceneB
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5652361548b68eb41bf19335415b5449
+    m_Address: ConfigSceneA_WithAssetReference
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f2966487754f57478763ec04d803962
+    m_Address: ConfigSceneB_WithAssetReference
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d43002d3047ff224dba517eecf9a0f97
+    m_Address: DictionarySpriteConfigSceneA
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6fe2c08d9ecd4945b1aed7fc50625b8
+    m_Address: ConfigSceneA
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - TestContent
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b02bd3b6843e3cf41b99e1bdc01e87f0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 49608be61a5698043ae8ed2f02ceec26, type: 2}
